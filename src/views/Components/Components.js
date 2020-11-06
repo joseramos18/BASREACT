@@ -14,10 +14,6 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import SectionTabs from "./Sections/SectionTabs.js";
-import SectionPills from "./Sections/SectionPills.js";
-import SectionTypography from "./Sections/SectionTypography.js";
-import SectionCarousel from "./Sections/SectionCarousel.js";
 import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 
@@ -54,12 +50,12 @@ export default function Components(props) {
         <ProductSection/>
         <TeamSection/> 
         <WorkSection/>
-        <SectionTabs />
-        <SectionPills />
+        {/* <SectionTabs /> */}
+        {/* <SectionPills /> */}
         {/* <SectionNotifications /> */}
-        <SectionTypography />
+        {/* <SectionTypography /> */}
        {/*  <SectionJavascript /> */}
-        <SectionCarousel />
+        {/* <SectionCarousel /> */}
         <SectionCompletedExamples />
         {/* <SectionLogin /> */}
         <GridItem md={12} className={classes.textCenter}>
