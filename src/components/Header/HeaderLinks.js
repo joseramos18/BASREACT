@@ -26,10 +26,20 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+    <ListItem className={classes.listItem}>
+        <Button
+          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+           Home
+        </Button>
+      </ListItem>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Servicios"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -37,15 +47,20 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
-              All components
+              Construcción
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
+            <Link to="/" className={classes.dropdownLink}>
+              Indsutria
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Medio ambiente
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Edifcio seguro
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Capacitaciones
+            </Link>
           ]}
         />
       </ListItem>
@@ -56,15 +71,20 @@ export default function HeaderLinks(props) {
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+           Mediciones
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
+        <Button
+          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+           Contacto
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
