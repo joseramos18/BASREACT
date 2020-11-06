@@ -21,13 +21,12 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>Nosotros</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          Somos un equipo que brinda servicio integral de Seguridad, Higiene y Medio Ambiente, 
+          teniendo en cuenta una relacion costo-beneficio, para poder adaptarnos de la mejor manera a las necesidades de cada cliente. 
+          Sabiendo que es una normativa legal, nuestro principal objetivo es cooperar con las empresas a cumplimentar las exigencias de Seguridad, Higiene y Medio Ambiente a nivel municipal, provincial y nacional. 
+          Nuestra consultora está en condiciones de asumir el compromiso de asesorarlo en la gestión de riesgos e incorporación de mejoras laborales y del Medio Ambiente, asi es como crecemos junto a nuestros clientes brindando apoyo en todas las ramas de nuestra Industria, Comercio y Estado
           </h5>
         </GridItem>
       </GridContainer>

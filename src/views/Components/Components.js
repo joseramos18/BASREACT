@@ -29,6 +29,9 @@ import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import ProductSection from "views/LandingPage/Sections/ProductSection.js";
+import TeamSection from "views/LandingPage/Sections/TeamSection.js";
+import WorkSection from "views/LandingPage/Sections/WorkSection.js";
 
 const useStyles = makeStyles(styles);
 
@@ -48,32 +51,24 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
-                <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
-                </h3>
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
+      <Parallax image={require("assets/img/safety.png")}>
+        
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
+        {/* <SectionBasics /> */}
         {/* <SectionNavbars /> */}
+        <ProductSection/>
+        <TeamSection/> 
+        <WorkSection/>
         <SectionTabs />
         <SectionPills />
         {/* <SectionNotifications /> */}
         <SectionTypography />
-        <SectionJavascript />
+       {/*  <SectionJavascript /> */}
         <SectionCarousel />
         <SectionCompletedExamples />
-        <SectionLogin />
+        {/* <SectionLogin /> */}
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
@@ -82,7 +77,7 @@ export default function Components(props) {
           </Link>
         </GridItem>
         <SectionExamples />
-        <SectionDownload />
+       {/*  <SectionDownload /> */}
       </div>
       <Footer />
     </div>
