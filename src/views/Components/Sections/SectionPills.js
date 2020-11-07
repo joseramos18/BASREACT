@@ -9,7 +9,6 @@ import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
-
 const useStyles = makeStyles(styles);
 
 export default function SectionPills(props) {
@@ -21,9 +20,12 @@ export default function SectionPills(props) {
    props.navItems.map((item) => array.push({
     tabButton: item.navTitle,
     tabContent: (
-    <span>
-      <p>{item.navDesc}</p>
-    </span>)
+      <span>
+        <p>{item.navDesc}</p>
+        {/* <img src={require("assets/img/bg2.jpg")}/> */}
+      </span>
+    ),
+    tabImg: require("assets/img/bg2.jpg")
    }))
    return array
  }

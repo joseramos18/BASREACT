@@ -78,8 +78,11 @@ export default function NavPills(props) {
       >
         {tabs.map((prop, key) => {
           return (
-            <div className={classes.tabContent} key={key}>
+            <div key={key}>
               {prop.tabContent}
+               <img src={prop.tabImg} style={{
+                 width:'80vh'
+      }}/> 
             </div>
           );
         })}
