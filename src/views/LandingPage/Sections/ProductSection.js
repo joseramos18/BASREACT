@@ -20,7 +20,7 @@ export default function ProductSection() {
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
-        <GridItem xs={12} sm={12} md={8}>
+        <GridItem xs={12} sm={10} md={8}>
           <h2 className={classes.title}>Nosotros</h2>
           <h5 className={classes.description}>
           Somos un equipo que brinda servicio integral de Seguridad, Higiene y Medio Ambiente, 

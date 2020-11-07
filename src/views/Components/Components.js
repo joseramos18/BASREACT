@@ -56,16 +56,16 @@ export default function Components(props) {
         {/* <SectionTypography /> */}
        {/*  <SectionJavascript /> */}
         {/* <SectionCarousel /> */}
-        <SectionCompletedExamples />
+        {/* <SectionCompletedExamples /> */}
         {/* <SectionLogin /> */}
-        <GridItem md={12} className={classes.textCenter}>
+        {/* <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
               View Login Page
             </Button>
           </Link>
-        </GridItem>
-        <SectionExamples />
+        </GridItem> */}
+        {/* <SectionExamples /> */}
        {/*  <SectionDownload /> */}
       </div>
       <Footer />
