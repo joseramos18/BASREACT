@@ -17,11 +17,12 @@ import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 const info = {
-  'title':'Servicios',
+  'title':'Mediciones',
   'navItems': [
   {
     'navTitle':'Construcción',
-    'navDesc': 'Hola'
+    'navDesc': 'Hola',
+    tabImg: require("assets/img/bg2.jpg")
   },
   {
     'navTitle':'Industria',
@@ -42,7 +43,7 @@ const info = {
 ]
 }
 //console.log(info)
-export default function ServicePage(props) {
+export default function MeasurementPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(

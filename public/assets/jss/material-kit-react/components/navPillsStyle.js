@@ -140,8 +140,10 @@ const navPillsStyle = theme => ({
       letterSpacing: "normal"
     }
   },
-  tabImg: {
-      width:'80vh !important'
+  divContent: {
+    display: "flex",
+    flexDirecion: "column",
+    alignItems: "center"
   }
 });
 
