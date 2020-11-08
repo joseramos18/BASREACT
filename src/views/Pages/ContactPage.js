@@ -14,8 +14,6 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
-import SectionExamples from "./Sections/SectionExamples.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import ProductSection from "views/LandingPage/Sections/ProductSection.js";
@@ -24,7 +22,7 @@ import WorkSection from "views/LandingPage/Sections/WorkSection.js";
 
 const useStyles = makeStyles(styles);
 
-export default function Components(props) {
+export default function ContactPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -40,33 +38,12 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax small filter image={require("assets/img/bg4.jpg")}>
         
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        {/* <SectionBasics /> */}
-        {/* <SectionNavbars /> */}
-        <ProductSection/>
-        <TeamSection/> 
         <WorkSection/>
-        {/* <SectionTabs /> */}
-        {/* <SectionPills /> */}
-        {/* <SectionNotifications /> */}
-        {/* <SectionTypography /> */}
-       {/*  <SectionJavascript /> */}
-        {/* <SectionCarousel /> */}
-        {/* <SectionCompletedExamples /> */}
-        {/* <SectionLogin /> */}
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
-        </GridItem>
-        {/* <SectionExamples /> */}
-       {/*  <SectionDownload /> */}
       </div>
       <Footer />
     </div>

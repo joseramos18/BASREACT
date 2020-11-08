@@ -9,6 +9,8 @@ import SwipeableViews from "react-swipeable-views";
 import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
+import { Link } from "react-router-dom";
+import Button from "components/CustomButtons/Button.js";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -108,6 +110,13 @@ export default function NavPills(props) {
     <div>
       {tabButtons}
       {tabContent}
+      <GridItem md={12} className={classes.textCenter}>
+          <Link to={"/contact"} className={classes.link}>
+            <Button color="primary" size="lg" simple>
+              Solicite presupuesto
+            </Button>
+          </Link>
+        </GridItem>
     </div>
   );
 }

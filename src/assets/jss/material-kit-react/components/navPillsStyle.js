@@ -140,8 +140,8 @@ const navPillsStyle = theme => ({
       letterSpacing: "normal"
     }
   },
-  tabImg: {
-      width:'80vh !important'
+  textCenter: {
+    textAlign: "center"
   }
 });
 
