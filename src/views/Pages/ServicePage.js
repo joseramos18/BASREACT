@@ -36,15 +36,15 @@ export default function ServicePage(props) {
             <p>
               -Programa de Seguridad según el tipo de RES. SRT 51/97, 35/98,
               319/99.
-            </p>
-            <p>-Aviso de obra</p>
-            <p>
+              <br></br>
+              -Aviso de obra
+              <br></br>
               -Capacitaiones para la prevención en obra semanal, quincenal y/o
               mensual
-            </p>
-            <p>-Auditorias en cumplimiento según normativa vigente</p>
-            <p>
-              Confección de legajos técnicos según exigencia del contratista
+              <br></br>
+              -Auditorias en cumplimiento según normativa vigente
+              <br></br>
+              -Confección de legajos técnicos según exigencia del contratista
               principal o del comitente
             </p>
           </span>
@@ -67,12 +67,10 @@ export default function ServicePage(props) {
             <p>
               -Auditorias de cumplimiento legal en Seguridad e Higiene Laboral
               acorde al tipo de establecimiento.
-            </p>
-            <p>
+              <br></br>
               -Confección de estadisticas sobre indicadores de Seguridad y Salud
               Ocupacional
-            </p>
-            <p>
+              <br></br>
               -Cumplimentar las exigencias de la Superintendencia de Riego de
               Trabajo, ART y otros organismos oficiales
             </p>
@@ -94,14 +92,23 @@ export default function ServicePage(props) {
               declaraciones juradas de Residuos Especiales y Efluentes Gaseosos.
               (No incluye tasas a abonar en los organismos correspondientes).
             </p>
-            <p>-Asesoramiento Ambiental Externo (visitas de 60 min)</p>
-            <p>-Evaluación ambiental</p>
-            <p>-Realización y presentación de DDJJ</p>
-            <p>-Registro de manifiestos y certificados</p>
-            <p>-Gestión del certificado de Aptitud Ambiental</p>
-            <p>-Control de hojas de seguridad</p>
-            <p>-Asesoramiento externo en ISO 14001:2015.</p>
-            <p>-Asistencia y soporte ante entes gubernamentales</p>
+            <p>
+            -Asesoramiento Ambiental Externo (visitas de 60 min)
+            <br></br>
+            -Evaluación ambiental
+            <br></br>
+            -Realización y presentación de DDJJ
+            <br></br>
+            -Registro de manifiestos y certificados
+            <br></br>
+            -Gestión del certificado de Aptitud Ambiental
+            <br></br>
+            -Control de hojas de seguridad
+            <br></br>
+            -Asesoramiento externo en ISO 14001:2015.
+            <br></br>
+            -Asistencia y soporte ante entes gubernamentales.           
+            </p>
           </span>
         ),
         tabImg: require("assets/img/bg2.jpg"),
@@ -123,14 +130,13 @@ export default function ServicePage(props) {
               1875/DGDYPC/2011.
             </p>
             <p>
-              Disposición oblitaoria para inmuenbles afectados al Regimen de
+              Disposición obligatoria para inmuenbles afectados al Regimen de
               Propiedad Horizontal (Ley 13512)
             </p>
             <p>
               -Asesoramiento para la prevención y subsanado de los posibles
               peligros.
-            </p>
-            <p>
+              <br></br>
               -Luego de la verificación del cumplimiento de la normativa vigente
               a la que se encuentran sometidos los edificios sujetos al Régimen
               de Propiedad Horizontal, el Certificado de Edificio Seguro será
@@ -155,11 +161,17 @@ export default function ServicePage(props) {
             </p>
             <p>
               -Uso y conversación de los elementos de protección personal (EPP)
+              <br></br>
+              -Trabajos en espacios confinados
+              <br></br>
+              -Seguridad en el manejo de gases comprimidos
+              <br></br>
+              -Plan de evacuacín ante emergencias
+              <br></br>
+              -Ergonomía según el puesto de trabajo
+              <br></br>
+              <br></br>
             </p>
-            <p>-Trabajos en espacios confinados</p>
-            <p>-Seguridad en el manejo de gases comprimidos</p>
-            <p>-Plan de evacuacín ante emergencias</p>
-            <p>-Ergonomía según el puesto de trabajo</p>
           </span>
         ),
         tabImg: require("assets/img/bg2.jpg"),
