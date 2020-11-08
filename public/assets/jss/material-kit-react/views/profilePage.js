@@ -56,6 +56,9 @@ const profilePageStyle = {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center"
+  },
+  navDesc: {
+    maxWidth: "80vh !important"
   }
 };
 
