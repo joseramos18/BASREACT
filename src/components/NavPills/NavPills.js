@@ -90,7 +90,7 @@ export default function NavPills(props) {
               <img
                 src={prop.tabImg}
                 style={{
-                  width: "80vh",
+                  width: "90vh",
                 }}
               />
             </div>

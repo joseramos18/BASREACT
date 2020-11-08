@@ -29,7 +29,7 @@ export default function ServicePage(props) {
         navDesc: (
           <span
             style={{
-              maxWidth: "80vh",
+              maxWidth: "90vh",
             }}
           >
             <p>Ofrecemos confección y presentación ante ART de</p>
@@ -56,7 +56,7 @@ export default function ServicePage(props) {
         navDesc: (
           <span
             style={{
-              maxWidth: "80vh",
+              maxWidth: "90vh",
             }}
           >
             <p>
@@ -85,7 +85,7 @@ export default function ServicePage(props) {
         navDesc: (
           <span
             style={{
-              maxWidth: "80vh",
+              maxWidth: "90vh",
             }}
           >
             <p>
@@ -111,7 +111,7 @@ export default function ServicePage(props) {
         navDesc: (
           <span
             style={{
-              maxWidth: "80vh",
+              maxWidth: "90vh",
             }}
           >
             <p>
@@ -146,7 +146,7 @@ export default function ServicePage(props) {
         navDesc: (
           <span
             style={{
-              maxWidth: "80vh",
+              maxWidth: "90vh",
             }}
           >
             <p>
