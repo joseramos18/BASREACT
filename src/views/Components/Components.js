@@ -30,7 +30,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand={require("assets/img/safetyHeader.JPG")}
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -40,7 +40,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("assets/img/principal.jpeg")}>
         
       </Parallax>
 

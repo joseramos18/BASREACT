@@ -49,7 +49,7 @@ export default function ServicePage(props) {
             </p>
           </span>
         ),
-        tabImg: require("assets/img/bg2.jpg"),
+        tabImg: require("assets/img/construction.png"),
       },
       {
         navTitle: "Industria",
@@ -76,7 +76,7 @@ export default function ServicePage(props) {
             </p>
           </span>
         ),
-        tabImg: require("assets/img/bg2.jpg"),
+        tabImg: require("assets/img/industry.png"),
       },
       {
         navTitle: "Medio ambiente",
@@ -111,7 +111,7 @@ export default function ServicePage(props) {
             </p>
           </span>
         ),
-        tabImg: require("assets/img/bg2.jpg"),
+        tabImg: require("assets/img/enviroment.png"),
       },
       {
         navTitle: "Edificio seguro",
@@ -145,7 +145,7 @@ export default function ServicePage(props) {
             </p>
           </span>
         ),
-        tabImg: require("assets/img/bg2.jpg"),
+        tabImg: require("assets/img/buildings.png"),
       },
       {
         navTitle: "Capacitaciones",
@@ -174,7 +174,7 @@ export default function ServicePage(props) {
             </p>
           </span>
         ),
-        tabImg: require("assets/img/bg2.jpg"),
+        tabImg: require("assets/img/trainning.png"),
       },
     ],
   };

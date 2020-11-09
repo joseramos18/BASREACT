@@ -36,7 +36,7 @@ const info = {
           </p>
         </span>
       ),
-      tabImg: require("assets/img/bg2.jpg"),
+      tabImg: require("assets/img/puestaTierra.jpg"),
     },
     {
       navTitle: "Iluminacióm",
@@ -61,7 +61,7 @@ const info = {
           </p>
         </span>
       ),
-      tabImg: require("assets/img/bg2.jpg"),
+      tabImg: require("assets/img/iluminacion.jpg"),
     },
     {
       navTitle: "Ergonomía",
@@ -99,7 +99,7 @@ const info = {
           </p>
         </span>
       ),
-      tabImg: require("assets/img/bg2.jpg"),
+      tabImg: require("assets/img/ergonomia.jpg"),
     },
     {
       navTitle: "Ventilación",
@@ -120,7 +120,7 @@ const info = {
           </p>
         </span>
       ),
-      tabImg: require("assets/img/bg2.jpg"),
+      tabImg: require("assets/img/ventilacion.jpg"),
     },
     {
       navTitle: "Carga de fuego",
@@ -142,7 +142,7 @@ const info = {
           </p>
         </span>
       ),
-      tabImg: require("assets/img/bg2.jpg"),
+      tabImg: require("assets/img/fuego.png"),
     },
   ],
 };
