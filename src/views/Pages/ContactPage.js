@@ -28,7 +28,7 @@ export default function ContactPage(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand={require("assets/img/safetyHeader.JPG")}
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"

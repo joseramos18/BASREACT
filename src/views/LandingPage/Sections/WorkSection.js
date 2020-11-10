@@ -21,49 +21,58 @@ export default function WorkSection() {
       <GridContainer justify="center">
         <GridItem cs={10} sm={8} md={8}>
           <h2 className={classes.title}>Contactanos</h2>
-          <form>
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={4}>
+          <form
+            action="https://formsapi.jabwn.com/key/VOD5iffVjghGJCgcQiKZ"
+            method="post"
+          >
+            <GridContainer justify="center">
+              <GridItem xs={10} sm={10} md={4}>
                 <CustomInput
                   labelText="Nombre"
                   id="name"
                   formControlProps={{
-                    fullWidth: true
+                    fullWidth: true,
                   }}
+                  name="name"
                 />
               </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
+              <GridItem xs={10} sm={10} md={4}>
                 <CustomInput
                   labelText="Email"
                   id="email"
                   formControlProps={{
-                    fullWidth: true
+                    fullWidth: true,
                   }}
+                  name="email"
                 />
               </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
+              <GridItem xs={10} sm={10} md={4}>
                 <CustomInput
                   labelText="Teléfono"
                   id="phone"
                   formControlProps={{
-                    fullWidth: true
+                    fullWidth: true,
                   }}
+                  name="phone"
                 />
               </GridItem>
-              <CustomInput
+              <CustomInput xs={10} sm={10} md={4}
                 labelText="Tu mensaje"
                 id="message"
                 formControlProps={{
                   fullWidth: true,
-                  className: classes.textArea
+                  className: classes.textArea,
                 }}
                 inputProps={{
                   multiline: true,
-                  rows: 5
+                  rows: 5,
                 }}
+                name="message"
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button color="primary">Enviar mensaje</Button>
+                <Button color="primary" type="submit" value="Send">
+                  Enviar mensaje
+                </Button>
               </GridItem>
             </GridContainer>
           </form>

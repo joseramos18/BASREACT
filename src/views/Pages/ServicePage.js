@@ -182,7 +182,7 @@ export default function ServicePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit React"
+        brand={require("assets/img/safetyHeader.JPG")}
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{

@@ -45,7 +45,7 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="services" className={classes.dropdownLink}>
+            <Link to="services/" className={classes.dropdownLink}>
               Construcción
             </Link>,
             <Link to="services" className={classes.dropdownLink}>
@@ -89,7 +89,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://twitter.com/BsAs_Safety"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -107,7 +107,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/BsAsSafety/"
             target="_blank"
             className={classes.navLink}
           >
@@ -124,7 +124,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://instagram.com/bsas.safety"
             target="_blank"
             className={classes.navLink}
           >
