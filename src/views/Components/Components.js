@@ -14,13 +14,12 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
-import SectionExamples from "./Sections/SectionExamples.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import ProductSection from "views/LandingPage/Sections/ProductSection.js";
 import TeamSection from "views/LandingPage/Sections/TeamSection.js";
 import WorkSection from "views/LandingPage/Sections/WorkSection.js";
+import Hidden from "@material-ui/core/Hidden";
 
 const useStyles = makeStyles(styles);
 
@@ -43,8 +42,7 @@ export default function Components(props) {
       <Parallax image={require("assets/img/principal.jpeg")}>
         
       </Parallax>
-
-      <div className={classNames(classes.main, classes.mainRaised)}>
+<div className={classNames(classes.main, classes.mainRaised)}>
         {/* <SectionBasics /> */}
         {/* <SectionNavbars /> */}
         <ProductSection/>
@@ -68,6 +66,8 @@ export default function Components(props) {
         {/* <SectionExamples /> */}
        {/*  <SectionDownload /> */}
       </div>
+
+      
       <Footer />
     </div>
   );

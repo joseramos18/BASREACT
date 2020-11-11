@@ -2,7 +2,7 @@ import { container, title } from "assets/jss/material-kit-react.js";
 
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
-const profilePageStyle = {
+const profilePageStyle =  theme => ({
   container,
   profile: {
     textAlign: "center",
@@ -32,7 +32,10 @@ const profilePageStyle = {
     margin: "-60px 30px 0px",
     borderRadius: "6px",
     boxShadow:
-      "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
+      "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
+      [theme.breakpoints.down("sm")]: {
+        margin: "0px 0px 0px",
+      }
   },
   title: {
     ...title,
@@ -57,6 +60,6 @@ const profilePageStyle = {
     margin: "20px auto 50px auto",
     textAlign: "center"
   }
-};
+})
 
 export default profilePageStyle;
