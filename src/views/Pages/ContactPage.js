@@ -15,9 +15,7 @@ import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 
-import styles from "assets/jss/material-kit-react/views/components.js";
-import ProductSection from "views/LandingPage/Sections/ProductSection.js";
-import TeamSection from "views/LandingPage/Sections/TeamSection.js";
+import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import WorkSection from "views/LandingPage/Sections/WorkSection.js";
 
 const useStyles = makeStyles(styles);
@@ -43,7 +41,11 @@ export default function ContactPage(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <WorkSection/>
+      <div>
+          <div className={classes.container}>
+          <WorkSection/>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

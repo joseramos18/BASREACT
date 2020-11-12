@@ -43,19 +43,11 @@ export default function Components(props) {
         
       </Parallax>
 <div className={classNames(classes.main, classes.mainRaised)}>
-        {/* <SectionBasics /> */}
-        {/* <SectionNavbars /> */}
-        <ProductSection/>
+<div>
+          <div className={classes.container}>
+          <ProductSection/>
         <TeamSection/> 
         <WorkSection/>
-        {/* <SectionTabs /> */}
-        {/* <SectionPills /> */}
-        {/* <SectionNotifications /> */}
-        {/* <SectionTypography /> */}
-       {/*  <SectionJavascript /> */}
-        {/* <SectionCarousel /> */}
-        {/* <SectionCompletedExamples /> */}
-        {/* <SectionLogin /> */}
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
@@ -63,6 +55,19 @@ export default function Components(props) {
             </Button>
           </Link>
         </GridItem>
+          </div>
+        </div>
+        
+        {/* <SectionBasics /> */}
+        {/* <SectionNavbars /> */}
+         {/* <SectionTabs /> */}
+        {/* <SectionPills /> */}
+        {/* <SectionNotifications /> */}
+        {/* <SectionTypography /> */}
+       {/*  <SectionJavascript /> */}
+        {/* <SectionCarousel /> */}
+        {/* <SectionCompletedExamples /> */}
+        {/* <SectionLogin /> */}
         {/* <SectionExamples /> */}
        {/*  <SectionDownload /> */}
       </div>
