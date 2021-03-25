@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import MetaTags from 'react-meta-tags';
 
 // @material-ui/icons
 import Chat from "@material-ui/icons/Chat";
@@ -16,8 +17,25 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/prod
 const useStyles = makeStyles(styles);
 
 export default function ProductSection() {
+/*   useEffect(() => {
+    const script = document.createElement('script');
+  
+    script.src = "https://apis.google.com/js/platform.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+  }, []); */
   const classes = useStyles();
   return (
+    <React.Fragment>
+{/*     <MetaTags>
+            <title>Page 1</title>
+            <meta name="description" content="Some description." />
+            <meta name="google-signin-client_id" content="546440345785-v2o937i599gdtobqb2rsc1k3qfrm4n7e.apps.googleusercontent.com"></meta>
+            <meta property="og:title" content="MyApp" />
+            <meta property="og:image" content="path/to/image.jpg" />
+    </MetaTags>
+    <div className="g-signin2" data-onsuccess="onSignIn"></div> */}
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={10} md={8}>
@@ -30,37 +48,6 @@ export default function ProductSection() {
           </h5>
         </GridItem>
       </GridContainer>
-{/*       <div>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
-              iconColor="info"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
-              vertical
-            />
-          </GridItem>
-        </GridContainer>
-      </div> */}
-    </div>
-  );
+      </div>
+      </React.Fragment>  );
 }

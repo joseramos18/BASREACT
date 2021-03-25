@@ -39,40 +39,16 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/principal.jpeg")}>
-        
-      </Parallax>
-<div className={classNames(classes.main, classes.mainRaised)}>
-<div>
+      <Parallax image={require("assets/img/principal.jpeg")}></Parallax>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div>
           <div className={classes.container}>
-          <ProductSection/>
-        <TeamSection/> 
-        <WorkSection/>
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
-        </GridItem>
+            <ProductSection />
+            <TeamSection />
+            <WorkSection />
           </div>
         </div>
-        
-        {/* <SectionBasics /> */}
-        {/* <SectionNavbars /> */}
-         {/* <SectionTabs /> */}
-        {/* <SectionPills /> */}
-        {/* <SectionNotifications /> */}
-        {/* <SectionTypography /> */}
-       {/*  <SectionJavascript /> */}
-        {/* <SectionCarousel /> */}
-        {/* <SectionCompletedExamples /> */}
-        {/* <SectionLogin /> */}
-        {/* <SectionExamples /> */}
-       {/*  <SectionDownload /> */}
       </div>
-
-      
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -146,7 +146,7 @@ const info = {
     },
   ],
 };
-//console.log(info)
+              
 export default function MeasurementPage(props) {
   const classes = useStyles();
   const { ...rest } = props;

@@ -36,7 +36,7 @@ export default function ContactPage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/img/bg4.jpg")}>
+      <Parallax small filter image={require("assets/img/profile-bg.jpg")}>
         
       </Parallax>
 
