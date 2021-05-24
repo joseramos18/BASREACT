@@ -49,13 +49,13 @@ export default function HeaderLinks(props) {
               Construcción
             </Link>,
             <Link to="services" className={classes.dropdownLink}>
-              Indsutria
+              Industria
             </Link>,
             <Link to="services" className={classes.dropdownLink}>
               Medio ambiente
             </Link>,
             <Link to="services" className={classes.dropdownLink}>
-              Edifcio seguro
+              Edificio seguro
             </Link>,
             <Link to="services" className={classes.dropdownLink}>
               Capacitaciones
