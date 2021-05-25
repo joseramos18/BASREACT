@@ -39,7 +39,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/header5.png")}></Parallax>
+      <Parallax filter image={require("assets/img/header5.png")}></Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>

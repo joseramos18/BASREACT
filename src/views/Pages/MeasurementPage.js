@@ -39,7 +39,7 @@ const info = {
       tabImg: require("assets/img/puestaTierra.jpg"),
     },
     {
-      navTitle: "Iluminacióm",
+      navTitle: "Iluminación",
       navDesc: (
         <span
           style={{
@@ -163,7 +163,7 @@ export default function MeasurementPage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+      <Parallax small filter image={require("assets/img/header5.png")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
