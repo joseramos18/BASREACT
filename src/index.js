@@ -18,7 +18,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
-      <Route path="/services" component={ServicePage} />
+      <Route path="/services/:service" component={ServicePage} />
       <Route path="/measurements" component={MeasurementPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/" component={Components} />

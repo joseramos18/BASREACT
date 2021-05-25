@@ -1,6 +1,5 @@
 const parallaxStyle = {
 	parallax: {
-    //height: "65vh",
 		maxHeight: "1000px",
 		overflow: "hidden",
 		position: "relative",
@@ -30,12 +29,6 @@ const parallaxStyle = {
 	small: {
 		height: "380px",
 	},
-	// parallaxMobile: {
-	// 	height: "30vh",
-	// },
-	// parallaxDesktop: {
-	// 	height: "65vh",
-	// },
 };
 
 export default parallaxStyle;

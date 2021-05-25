@@ -14,7 +14,7 @@ const useStyles = makeStyles(styles);
 export default function SectionPills(props) {
   const classes = useStyles();
   const { ...params } = props;
-  
+  console.log(props)
  const getArray = (props) => {
   var array = []
    props.navItems.map((item) => array.push({
@@ -36,6 +36,9 @@ export default function SectionPills(props) {
               <NavPills
                 color="primary"
                 tabs= { getArray(params.props)}
+                activePill={params.props.activePill}
+                setActivePill={params.props.setActivePill}
+                isMeasurement={params.props.isMeasurement}
               />
             </GridItem>
           </GridContainer>

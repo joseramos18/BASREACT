@@ -15,7 +15,6 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
-
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
@@ -39,7 +38,7 @@ export default function Header(props) {
 		const { color, changeColorOnScroll } = props;
 		const windowsScrollTop = window.pageYOffset;
 		if (windowsScrollTop > changeColorOnScroll.height) {
-      setBrandComponent(
+			setBrandComponent(
 				<img
 					src={brand}
 					style={{
@@ -47,7 +46,6 @@ export default function Header(props) {
 					}}
 				/>
 			);
-			
 			document.body
 				.getElementsByTagName("header")[0]
 				.classList.remove(classes[color]);
