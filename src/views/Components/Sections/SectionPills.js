@@ -14,7 +14,6 @@ const useStyles = makeStyles(styles);
 export default function SectionPills(props) {
   const classes = useStyles();
   const { ...params } = props;
-  console.log(props)
  const getArray = (props) => {
   var array = []
    props.navItems.map((item) => array.push({
