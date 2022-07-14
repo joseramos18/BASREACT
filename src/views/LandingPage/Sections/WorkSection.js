@@ -9,6 +9,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
+import whatsapp from "assets/img/whatsapp.png";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
@@ -75,8 +76,9 @@ export default function WorkSection() {
                 </Button>
               </GridItem>
             </GridContainer>
-          </form>
+          </form>    
         </GridItem>
+        <div className={classes.whatsapp}><a href="https://wa.me/5491121652635?text=Me gustaría más información acerca de los servicios que ofrecen"><img src={whatsapp}></img></a> </div>
       </GridContainer>
     </div>
   );

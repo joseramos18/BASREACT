@@ -22,7 +22,22 @@ const workStyle = {
   textArea: {
     marginRight: "15px",
     marginLeft: "15px"
+  },
+  whatsapp:{
+    height: "45px",
+    width:"45px",
+    '& img':{
+      height:"100%"
+    },
+    "@media (min-width: 768px)": {
+      height: "60px",
+    width:"60px",
+    },
+  position: "absolute",
+  bottom: "20px",
+  right: "20px"
   }
+  
 };
 
 export default workStyle;
