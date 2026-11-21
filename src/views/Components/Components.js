@@ -29,17 +29,37 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand={require("assets/img/safetyHeader.JPG")}
-        rightLinks={<HeaderLinks />}
-        fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
+				color="white"
+				sticky
+				brand={require("assets/img/safetyHeader.JPG")}
+				rightLinks={<HeaderLinks />}
+				{...rest}
       />
-      <Parallax image={require("assets/img/header5.png")}></Parallax>
+      <Parallax image={require("assets/img/header5.png")} />
+      <div className={classes.heroBand}>
+        <div className={classes.container}>
+          <div className={classes.heroInner}>
+            <div>
+              <h1 className={classes.heroTitle}>
+                Seguridad, Higiene y Medio Ambiente
+              </h1>
+              <p className={classes.heroText}>
+                Asesoramiento integral para industria, construcción y comercio,
+                en cumplimiento de la normativa municipal, provincial y
+                nacional.
+              </p>
+            </div>
+            <a
+              className={classes.heroCta}
+              href="https://wa.me/5491121652635?text=Me gustaría más información acerca de los servicios que ofrecen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultanos por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>

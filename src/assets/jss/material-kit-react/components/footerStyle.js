@@ -1,59 +1,79 @@
-import { container, primaryColor } from "assets/jss/material-kit-react.js";
+import { container, navyColor } from "assets/jss/material-kit-react.js";
 
-const footerStyle = {
-  block: {
-    color: "inherit",
-    padding: "0.9375rem",
-    fontWeight: "500",
-    fontSize: "12px",
-    textTransform: "uppercase",
-    borderRadius: "3px",
-    textDecoration: "none",
-    position: "relative",
-    display: "block"
-  },
-  left: {
-    float: "left!important",
-    display: "block"
-  },
-  right: {
-    padding: "15px 0",
-    margin: "0",
-    float: "right!important"
-  },
+const footerStyle = theme => ({
   footer: {
-    padding: "0.9375rem 0",
-    textAlign: "center",
-    display: "flex",
+    position: "relative",
     zIndex: "2",
-    position: "relative"
-  },
-  a: {
-    color: primaryColor,
-    textDecoration: "none",
-    backgroundColor: "transparent"
-  },
-  footerWhiteFont: {
-    "&,&:hover,&:focus": {
-      color: "#FFFFFF"
-    }
+    marginTop: "64px",
+    padding: "56px 0 24px",
+    backgroundColor: navyColor,
+    color: "rgba(255, 255, 255, 0.78)",
+    textAlign: "left"
   },
   container,
+  columns: {
+    display: "grid",
+    gridTemplateColumns: "1.4fr 1fr 1fr",
+    gap: "40px",
+    [theme.breakpoints.down("sm")]: {
+      gridTemplateColumns: "1fr",
+      gap: "28px"
+    }
+  },
+  brand: {
+    color: "#fff",
+    fontSize: "1.25rem",
+    fontWeight: "600",
+    margin: "0 0 8px"
+  },
+  heading: {
+    color: "#fff",
+    fontSize: "12px",
+    fontWeight: "600",
+    letterSpacing: "0.08em",
+    textTransform: "uppercase",
+    margin: "0 0 14px"
+  },
+  text: {
+    fontSize: "0.9375rem",
+    lineHeight: "1.6em",
+    margin: "0 0 12px"
+  },
   list: {
-    marginBottom: "0",
+    listStyle: "none",
+    margin: "0",
     padding: "0",
-    marginTop: "0"
+    "& li": {
+      margin: "0 0 8px"
+    }
   },
-  inlineBlock: {
-    display: "inline-block",
-    padding: "0px",
-    width: "auto"
+  link: {
+    color: "rgba(255, 255, 255, 0.78)",
+    fontSize: "0.9375rem",
+    "&:hover,&:focus": {
+      color: "#fff",
+      textDecoration: "underline"
+    }
   },
-  icon: {
-    width: "18px",
-    height: "18px",
-    position: "relative",
-    top: "3px"
+  social: {
+    display: "flex",
+    gap: "14px",
+    marginTop: "18px"
+  },
+  socialLink: {
+    color: "rgba(255, 255, 255, 0.78)",
+    fontSize: "20px",
+    "&:hover,&:focus": {
+      color: "#fff"
+    }
+  },
+  bottom: {
+    marginTop: "40px",
+    paddingTop: "20px",
+    borderTop: "1px solid rgba(255, 255, 255, 0.14)",
+    fontSize: "0.8125rem",
+    color: "rgba(255, 255, 255, 0.6)"
   }
-};
+});
+
 export default footerStyle;

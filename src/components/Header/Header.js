@@ -42,7 +42,8 @@ export default function Header(props) {
 				<img
 					src={brand}
 					style={{
-						width: "35vh",
+						width: "220px",
+						maxWidth: "60vw",
 					}}
 				/>
 			);
@@ -62,24 +63,30 @@ export default function Header(props) {
 				.classList.remove(classes[changeColorOnScroll.color]);
 		}
 	};
-	const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+	const { color, rightLinks, leftLinks, brand, fixed, absolute, sticky } = props;
+	const showBrand =
+		brandComponent ||
+		(sticky && brand ? (
+			<img src={brand} alt="Buenos Aires Safety" style={{ width: "200px", maxWidth: "55vw", display: "block" }} />
+		) : null);
 	const appBarClasses = classNames({
 		[classes.appBar]: true,
 		[classes[color]]: color,
 		[classes.absolute]: absolute,
 		[classes.fixed]: fixed,
+		[classes.sticky]: sticky,
 	});
 	return (
 		<AppBar className={appBarClasses}>
 			<Toolbar className={classes.container}>
-				{leftLinks !== undefined ? brandComponent : null}
+				{leftLinks !== undefined ? showBrand : null}
 				<div className={classes.flex}>
 					{leftLinks !== undefined ? (
 						<Hidden smDown implementation="css">
 							{leftLinks}
 						</Hidden>
 					) : (
-						brandComponent
+						showBrand
 					)}
 				</div>
 				<Hidden smDown implementation="css">
@@ -135,6 +142,7 @@ Header.propTypes = {
 	leftLinks: PropTypes.node,
 	brand: PropTypes.string,
 	fixed: PropTypes.bool,
+	sticky: PropTypes.bool,
 	absolute: PropTypes.bool,
 	// this will cause the sidebar to change the color from
 	// props.color (see above) to changeColorOnScroll.color

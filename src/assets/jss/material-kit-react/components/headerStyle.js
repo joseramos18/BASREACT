@@ -16,14 +16,14 @@ const headerStyle = {
   appBar: {
     display: "flex",
     border: "0",
-    borderRadius: "3px",
+    borderRadius: "0",
     padding: "0.625rem 0",
     marginBottom: "20px",
     color: "#555",
     width: "100%",
     backgroundColor: "#fff",
-    boxShadow:
-      "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
+    boxShadow: "none",
+    borderBottom: "1px solid #e5e8ef",
     transition: "all 150ms ease 0s",
     alignItems: "center",
     flexFlow: "row nowrap",
@@ -38,6 +38,13 @@ const headerStyle = {
   fixed: {
     position: "fixed",
     zIndex: "1100"
+  },
+  sticky: {
+    position: "sticky",
+    top: 0,
+    zIndex: "1100",
+    marginBottom: "0 !important",
+    padding: "0.375rem 0 !important"
   },
   container: {
     ...container,
@@ -107,8 +114,9 @@ const headerStyle = {
   transparent: {
     backgroundColor: "transparent !important",
     boxShadow: "none",
+    borderBottom: "0",
     paddingTop: "25px",
-    color: "#4e6292"
+    color: "#0f1b3d"
   },
   dark: {
     color: "#FFFFFF",
@@ -120,10 +128,10 @@ const headerStyle = {
     border: "0",
     padding: "0.625rem 0",
     marginBottom: "20px",
-    color: "#4e6292",
+    color: "#0f1b3d",
     backgroundColor: "#fff !important",
-    boxShadow:
-      "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)"
+    boxShadow: "none",
+    borderBottom: "1px solid #e5e8ef"
   },
   drawerPaper: {
     border: "none",

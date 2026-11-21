@@ -72,7 +72,7 @@ export default function Parallax(props) {
 				...style,
 				backgroundImage: "url(" + image + ")",
 				transform: transform,
-				height: isMobile ? "30vh" : "65vh",
+				height: isMobile ? "30vh" : small ? "340px" : "65vh",
 			}}
 		>
 			{children}

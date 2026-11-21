@@ -26,17 +26,13 @@ export default function ContactPage(props) {
   return (
     <div>
       <Header
-        brand={require("assets/img/safetyHeader.JPG")}
-        rightLinks={<HeaderLinks />}
-        fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
+				color="white"
+				sticky
+				brand={require("assets/img/safetyHeader.JPG")}
+				rightLinks={<HeaderLinks />}
+				{...rest}
       />
-      <Parallax small image={require("assets/img/header5.png")}>
+      <Parallax small image={require("assets/img/header5-nologo.png")}>
         
       </Parallax>
 
