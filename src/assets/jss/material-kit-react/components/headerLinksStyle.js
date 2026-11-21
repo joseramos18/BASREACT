@@ -1,4 +1,4 @@
-import { defaultFont } from "assets/jss/material-kit-react.js";
+import { defaultFont, primaryColor } from "assets/jss/material-kit-react.js";
 
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.js";
 
@@ -61,6 +61,37 @@ const headerLinksStyle = (theme) => ({
 			"& > span:first-child": {
 				justifyContent: "flex-start",
 			},
+		},
+	},
+	ctaLink: {
+		backgroundColor: primaryColor + " !important",
+		color: "#fff !important",
+		padding: "0.6rem 1.1rem",
+		margin: "0 0.5rem",
+		fontWeight: "500",
+		borderRadius: "4px",
+		"&:hover,&:focus": {
+			backgroundColor: "#1a32a3 !important",
+			color: "#fff !important",
+		},
+		"& a, & a:hover": {
+			color: "#fff !important",
+			background: "transparent",
+		},
+	},
+	clientLink: {
+		color: primaryColor + " !important",
+		border: "1px solid " + primaryColor,
+		padding: "0.6rem 1.1rem",
+		margin: "0 0.25rem 0 0.5rem",
+		fontWeight: "500",
+		borderRadius: "4px",
+		"&:hover,&:focus": {
+			backgroundColor: "#eef1fb !important",
+			color: primaryColor + " !important",
+		},
+		[theme.breakpoints.down("sm")]: {
+			margin: "8px 15px",
 		},
 	},
 	notificationNavLink: {

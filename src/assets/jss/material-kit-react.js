@@ -48,8 +48,7 @@ const container = {
 };
 
 const boxShadow = {
-  boxShadow:
-    "0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
+  boxShadow: "0 2px 12px rgba(15, 27, 61, 0.10)"
 };
 
 const card = {
@@ -58,18 +57,20 @@ const card = {
   width: "100%",
   margin: "25px 0",
   boxShadow: "0 1px 4px 0 rgba(0, 0, 0, 0.14)",
-  borderRadius: "3px",
+  borderRadius: "4px",
   color: "rgba(0, 0, 0, 0.87)",
   background: "#fff"
 };
 
 const defaultFont = {
-  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-  fontWeight: "300",
+  fontFamily: '"IBM Plex Sans", "Helvetica", "Arial", sans-serif',
+  fontWeight: "400",
   lineHeight: "1.5em"
 };
 
 const primaryColor = "#1f3bbf";
+const navyColor = "#0f1b3d";
+const accentColor = "#c2410c";
 const warningColor = "#ff9800";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
@@ -79,7 +80,7 @@ const grayColor = "#999999";
 
 const primaryBoxShadow = {
   boxShadow:
-    "0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2)"
+    "0 4px 14px rgba(31, 59, 191, 0.25)"
 };
 const infoBoxShadow = {
   boxShadow:
@@ -124,7 +125,7 @@ const infoCardHeader = {
 };
 const primaryCardHeader = {
   color: "#fff",
-  background: "linear-gradient(60deg, #ab47bc, #8e24aa)",
+  background: "linear-gradient(60deg, #3a57d6, #1f3bbf)",
   ...primaryBoxShadow
 };
 const roseCardHeader = {
@@ -156,11 +157,12 @@ const defaultBoxShadow = {
 };
 
 const title = {
-  color: "#3C4858",
+  color: navyColor,
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
-  fontWeight: "700",
-  fontFamily: `"Roboto Slab", "Times New Roman", serif`
+  fontWeight: "600",
+  letterSpacing: "-0.01em",
+  fontFamily: `"IBM Plex Sans", "Helvetica", "Arial", sans-serif`
 };
 
 const cardTitle = {
@@ -189,6 +191,8 @@ export {
   card,
   defaultFont,
   primaryColor,
+  navyColor,
+  accentColor,
   warningColor,
   dangerColor,
   successColor,

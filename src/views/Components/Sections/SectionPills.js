@@ -25,7 +25,7 @@ export default function SectionPills(props) {
  }
   return (
     <div className={classes.section}>
-      <div className={classes.container}>
+      <div>
         <div id="navigation-pills">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>{params.props.title}</h2>

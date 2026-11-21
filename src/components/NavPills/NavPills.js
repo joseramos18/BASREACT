@@ -100,21 +100,8 @@ export default function NavPills({
 			>
 				{tabs.map((prop, key) => {
 					return (
-						<div
-							key={key}
-							style={{
-								display: "flex",
-								flexDirection: "column",
-								alignItems: "center",
-							}}
-						>
+						<div key={key} style={{ overflow: "hidden", padding: "0 2px" }}>
 							{prop.tabContent}
-							<img
-								src={prop.tabImg}
-								style={{
-									width: "90vh",
-								}}
-							/>
 						</div>
 					);
 				})}

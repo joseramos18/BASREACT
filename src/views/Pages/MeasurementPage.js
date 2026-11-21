@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
+import ServiceContent from "components/ServiceContent/ServiceContent.js";
 
 import SectionPills from "../Components/Sections/SectionPills";
 
@@ -16,149 +16,89 @@ import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
+const measurements = [
+	{
+		navTitle: "Puesta a tierra",
+		intro: [
+			"Medición del valor de Puesta a Tierra (PAT) y verificación de la continuidad de las masas en el ambiente laboral.",
+			"Entregamos la certificación correspondiente para presentar ante el organismo que corresponda (ART, SRT, Bomberos, municipios, etc.).",
+		],
+		items: [],
+		norms: ["Res. SRT 900/15"],
+		tabImg: require("assets/img/puestaTierra.jpg"),
+	},
+	{
+		navTitle: "Iluminación",
+		intro: [
+			"La iluminación en los puestos de trabajo tiene como objeto favorecer la percepción visual para asegurar la correcta ejecución de las tareas.",
+			"Damos cumplimiento a la Ley 19.587, al Dec. 351/79 (Cap. 12, Art. 71 a 84, y Anexo IV) y a la Res. SRT 84/2012.",
+			"Entregamos al cliente un informe con mediciones, resultados y recomendaciones, junto con las incumbencias profesionales, los certificados y el protocolo según Res. 84/12.",
+		],
+		items: [],
+		norms: ["Res. SRT 84/12", "Dec. 351/79 Anexo IV", "Ley 19.587"],
+		tabImg: require("assets/img/iluminacion.jpg"),
+	},
+	{
+		navTitle: "Ergonomía",
+		intro: [
+			"Nuestro objetivo es lograr el bienestar de los trabajadores en los distintos puestos de trabajo y asesorar a las empresas en todo lo referente a la Salud Ocupacional.",
+			"Para prevenir y reducir los problemas de salud de los trabajadores damos cumplimiento a la Res. 295/03 y a la Res. 886/15 (Ley 19.587), y realizamos estudios ergonómicos en cada puesto de trabajo, en el marco de la mejora continua.",
+		],
+		items: [
+			"Identificación de los factores de riesgo",
+			"Evaluación de los factores de riesgo mediante el método LMC",
+			"Análisis de saturación de oxígeno",
+			"Estudio de fuerza con dinamómetro",
+			"Estudio de carga postural con método REBA",
+			"Estimación de la sensación térmica global con método FANGER",
+			"Análisis biométrico de los puestos de trabajo",
+		],
+		norms: ["Res. 295/03", "Res. 886/15"],
+		tabImg: require("assets/img/ergonomia.jpg"),
+	},
+	{
+		navTitle: "Ventilación",
+		intro: [
+			"Teniendo en cuenta la normativa vigente para el Estudio de Ventilación (Ley 19.587 y Dec. 351/79, Cap. 11), los profesionales capacitados confeccionan protocolos con los resultados de la medición y de los cálculos de renovación, el certificado de calibración del instrumental utilizado, conclusiones y recomendaciones para modificar las instalaciones, de ser necesario.",
+			"Así se controlan los factores que pueden influir negativamente en los trabajadores, como la concentración de gases, nieblas o impurezas y la temperatura del ambiente, producto de las diferentes actividades realizadas.",
+		],
+		items: [],
+		norms: ["Ley 19.587", "Dec. 351/79 Cap. 11"],
+		tabImg: require("assets/img/ventilacion.jpg"),
+	},
+	{
+		navTitle: "Carga de fuego",
+		intro: [
+			"Contemplada en el Dec. 351/79, Anexo VII, Cap. 18, su objetivo es evaluar los distintos materiales combustibles presentes en el establecimiento.",
+		],
+		items: [
+			"Conocer la cantidad total de calor capaz de generar la combustión completa de los materiales presentes en el sector de incendio, para determinar la cantidad mínima de extintores a colocar",
+			"Se debe realizar y actualizar en forma anual",
+		],
+		norms: ["Dec. 351/79 Anexo VII"],
+		tabImg: require("assets/img/fuego.png"),
+	},
+];
+
 export default function MeasurementPage(props) {
 	const classes = useStyles();
 	const [activePill, setActivePill] = useState(0);
 	const { ...rest } = props;
 	const info = {
 		title: "Mediciones",
-		navItems: [
-			{
-				navTitle: "Puesta a tierra",
-				navDesc: (
-					<span
-						style={{
-							maxWidth: "90vh",
-						}}
-					>
-						<p>
-							Medición del valo de Puesta a Tierra (PAT) y verificación de la la
-							continuidad de las masas en el ambiente laboral.
-						</p>
-						<p>
-							Certifiación corresponiente para ser presentada ante organismo
-							corresponiente (ART, SRT, BOMBEROS, MUNICIPIOS, ETC)
-						</p>
-					</span>
-				),
-				tabImg: require("assets/img/puestaTierra.jpg"),
-			},
-			{
-				navTitle: "Iluminación",
-				navDesc: (
-					<span
-						style={{
-							maxWidth: "90vh",
-						}}
-					>
-						<p>
-							La iluminación en los puestos de trabajo tiene como objeto
-							favorecer la percepción visual con el fin de asegurar una correcta
-							ejecución de tareas.
-							<br></br>
-							Damos cumplimiento a la ley 19587, 12 Art. 71 a 84, Res. 84/2012
-							de la SRT. Dec. 351/79 Anexo IV.
-						</p>
-						<p>
-							Al cliente se le entregará un informe con medciones, resultados y
-							recomendaciones incumbencias profesionales y certificados
-							Protocolo según Res. 84/12
-						</p>
-					</span>
-				),
-				tabImg: require("assets/img/iluminacion.jpg"),
-			},
-			{
-				navTitle: "Ergonomía",
-				navDesc: (
-					<span
-						style={{
-							maxWidth: "90vh",
-						}}
-					>
-						<p>
-							Nuestro objetivo es lograr el bienestar de los trabajadores en los
-							distintos puestos de trabajo y asesorar a las empresas a todo lo
-							referente a la Salud Ocupacional.
-							<br></br>
-							Debemos evitar los problemas en los trabajadores y diminuir los
-							problemas de los mismos, es por eso que debemos tener en cuenta la
-							normativa vigente y dar cumplimiento a la Res 295/03, en marco de
-							la mejora continua, debemos realizar estudios económicos en todos
-							y en cada uno de los puestos de trabajo. Ley 19587 Res 886/15 de
-							la ART.
-						</p>
-						<p>
-							-Identifiación de los factores de riesgo.
-							<br></br>
-							-Evaluación de los factores de riesgo mediante el método LMC.
-							<br></br>
-							-Análisis de saturación de oxígeno.
-							<br></br>
-							-Estudio de fuerza con dinámetro.
-							<br></br>
-							-Estudio de carga postural con método REBA.
-							<br></br>
-							-Estimación de la sensación termica global con método FANGER.
-							<br></br>
-							-Análisis biométrico de los puestos de trabajo.
-						</p>
-					</span>
-				),
-				tabImg: require("assets/img/ergonomia.jpg"),
-			},
-			{
-				navTitle: "Ventilación",
-				navDesc: (
-					<span
-						style={{
-							maxWidth: "90vh",
-						}}
-					>
-						<p>
-							Teniendo en cuenta la normativa vigente para el Estudio de
-							Ventilación, como la Ley 19587 y el Dec. 351/79 , Cap 11. Los
-							profesionales capacitados, podrán confeccionar protocolos de
-							Ventilación con los resultados obtenidos en la medición y los
-							resultados de los calculos de renovación, certificado de
-							calibración del instrumental utiliado, conclusiones y
-							recomendaciones para poder modificar (de ser necesario) las
-							instalaciones. A partit de esto podremos controlar los factores
-							que pueden influir en forma negativa en los trabajadores, como es
-							la reducción de la concentración de gases, nieblas o distintos
-							tipos de impurezas y el control de temperatura, en el ambiente,
-							producto de las diferentes actividades realizadas.
-						</p>
-					</span>
-				),
-				tabImg: require("assets/img/ventilacion.jpg"),
-			},
-			{
-				navTitle: "Carga de fuego",
-				navDesc: (
-					<span
-						style={{
-							maxWidth: "90vh",
-						}}
-					>
-						<p>
-							Debido a que se contempla en el DEc. 351/79, Anezo VII, Cap 18 y
-							su objetivo es poder evaludar los diferentes materiales
-							combustibles que se encuentran en el establecimiento determinado.
-						</p>
-						<p>
-							-El objetivo de este informe es conocer la cantidad total de calor
-							capaz de generar la combustión completa de los materiales
-							presentes en el sector de incendio, con el fin de determinar la
-							cantidad minima de extintores a colocar.
-							<br></br>
-							-Se debe realizar y actualizar en forma anual.
-						</p>
-					</span>
-				),
-				tabImg: require("assets/img/fuego.png"),
-			},
-		],
+		navItems: measurements.map((item) => ({
+			navTitle: item.navTitle,
+			navDesc: (
+				<ServiceContent
+					intro={item.intro}
+					items={item.items}
+					norms={item.norms}
+					image={item.tabImg}
+					alt={item.navTitle}
+				/>
+			),
+			tabImg: item.tabImg,
+		})),
 		activePill,
 		setActivePill,
 		isMeasurement: true,
@@ -166,17 +106,13 @@ export default function MeasurementPage(props) {
 	return (
 		<div>
 			<Header
-				color="transparent"
+				color="white"
+				sticky
 				brand={require("assets/img/safetyHeader.JPG")}
 				rightLinks={<HeaderLinks />}
-				fixed
-				changeColorOnScroll={{
-					height: 200,
-					color: "white",
-				}}
 				{...rest}
 			/>
-			<Parallax small image={require("assets/img/header5.png")} />
+			<Parallax small image={require("assets/img/header5-nologo.png")} />
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div>
 					<div className={classes.container}>

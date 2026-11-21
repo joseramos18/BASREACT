@@ -2,7 +2,7 @@ import { container, title } from "assets/jss/material-kit-react.js";
 
 const pillsStyle = {
   section: {
-    padding: "70px 0"
+    padding: "40px 0 48px"
   },
   container,
   title: {

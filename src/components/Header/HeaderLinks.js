@@ -70,7 +70,18 @@ export default function HeaderLinks(props) {
 				</Button>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Button color="transparent" className={classes.navLink}>
+				<Button
+					color="transparent"
+					className={classes.navLink + " " + classes.clientLink}
+					href="https://www.adminapp.website/login?next=%2F"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Clientes
+				</Button>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Button color="transparent" className={classes.navLink + " " + classes.ctaLink}>
 					<NavLink className={classes.colorInherit} to="/contact">
 						Contacto
 					</NavLink>
